@@ -65,6 +65,9 @@ function blob_fixup() {
     product/lib64/libdpmframework.so)
         patchelf --add-needed "libshim_dpmframework.so" "${2}"
         ;;
+    product/etc/permissions/qcrilhook.xml)
+        sed -i 's|/system/framework/qcrilhook.jar|/system/product/framework/qcrilhook.jar|g' "${2}"
+        ;;
     vendor/etc/permissions/qti_libpermissions.xml)
         sed -i 's|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g' "${2}"
         ;;
