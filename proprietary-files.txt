@@ -391,6 +391,11 @@ vendor/firmware/a540_zap.b02
 vendor/firmware/a540_zap.elf
 vendor/firmware/a540_zap.mdt
 
+# IMS - from jasmine V11.0.15.0.QDIMIXM
+-product/priv-app/ims/ims.apk|fe11b3fe75a52e586ca6390adbd1b234f4f565ed
+product/lib64/libimscamera_jni.so|7cb89110cca94d37d68c705f12a7a5a4ee106139
+product/lib64/libimsmedia_jni.so|3540752cc3658261ea3c909f03018eea4398f84e
+
 # IMS - from LA.UM.8.2.r1-05700-sdm660.0
 -product/app/uceShimService/uceShimService.apk|91f9ca2e1121ad9ff2805031ade6c685392e636c
 product/lib64/lib-imscamera.so|2b6e58ed6af90e8647d5a4aef70cfe9c0f030438
@@ -399,11 +404,8 @@ product/lib64/lib-imsvt.so|fe8ebc9163ff15e218f9de6fa0b6ffe2ff1f3ba9
 product/lib64/lib-imsvtextutils.so|2a56339597b28fb649732db1efc5ba9c05b85c5e
 product/lib64/lib-imsvtutils.so|645d7ed0c35fcbb711d240d60dcc549340b94132
 product/lib64/libdiag_system.so|90f71bff50a37d8b1b87ee426fbeaaeebe5148af
-product/lib64/libimscamera_jni.so|41fd9faa10818c9f7c5a14d372a07f79b0ca0daa
-product/lib64/libimsmedia_jni.so|448795a73bbf72fc0c9876f86a13769139ea8022
 product/lib64/vendor.qti.imsrtpservice@2.0.so|6ef5cd72d34c20e82cb0e58681a4aae9b0dac99a
 product/lib64/vendor.qti.imsrtpservice@2.1.so|6dbe703a5a8389c342008c950aaec7a3a260a055
--product/priv-app/ims/ims.apk|bd32366296caf44cf2171a464b788004bed58156
 vendor/bin/ims_rtp_daemon|9f3f4cdbe1b90694ea9c15cb0c88b321c03aa994
 vendor/bin/imsdatadaemon|826504cc1327833c463c5f67585e936bb1234dcf
 vendor/bin/imsqmidaemon|ec0d345a412ce1b12072db4eca9b02d36de5448f
@@ -545,12 +547,14 @@ vendor/lib64/libqmi_csi.so|b7de2a57e4ac58353e89fdf2c7f4778dcc72cd2d
 vendor/lib64/libqmi_encdec.so|eedf39676bf4447cb2e3f629d1d18dcad846ab85
 vendor/lib64/libqmiservices.so|2b540e3da7a167346205813801d1cf7239759b1f
 
+# RIL - from jasmine V11.0.15.0.QDIMIXM
+product/framework/qti-telephony-common.jar|5b1c23ce0d42e1b666d387eedde3444dd07e61bc
+
 # RIL - from LA.UM.8.2.r1-05700-sdm660.0
 -product/app/QtiTelephonyService/QtiTelephonyService.apk|9758fbbaa7b2a18c01a32200b3a86a4dbc798d3c
 -product/app/datastatusnotification/datastatusnotification.apk|9d0bae96aa9f156534074b515c66126d13db5413
 product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
 product/framework/qcrilhook.jar|23768fda90519d799e682fd058ec85b7b5cd6f89
-product/framework/qti-telephony-common.jar|180e59fb4d79e00612526c243b94711630940733
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|71d083671c3ea4cd5e287a63fb254bb0ab60ed20
 vendor/bin/ATFWD-daemon|45fbe9c5bca99b1e9fb5d056e3d4dc37ad40d3b1
 vendor/bin/netmgrd|f3e4defadb041e959e059a0a2e5448fcf9360d08
